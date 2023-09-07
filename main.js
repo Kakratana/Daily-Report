@@ -11,7 +11,7 @@ if (navigator.share) {
 window.doSharing = (el) => {
   navigator.share({
     
-    text: el.parentNode.querySelector("p").innerText,
+    text: el.parentNode.querySelector("pre").innerText,
     
   });
 };
