@@ -10,16 +10,29 @@
 </head>
 <body>
 <script>
-var dt = new Date();
 
-document.getElementById('date-time').innerHTML=dt;
+var date = new Date();
+var day = date.getDate();
+var month = date.getMonth()+1; 
+var year = date.getFullYear();
+if(day<10) 
+{
+    day='0'+day;
+} 
+if(month<10) 
+{
+    month='0'+month;
+} 
+var currentDate = day + '-' + month + '-' + year;    
+document.getElementById('output').innerHTML = currentDate;
+
 </script>
 	
     <article>
         <h1>Daily report</h1>
         <pre>
 របាយការណ៍សកម្មភាពប្រចាំថ្ងៃ
-📅 កាលបរិច្ឆេទ: <span id='date-time'></span>
+📅 កាលបរិច្ឆេទ: <span id='output'></span>
 🤵 បុគ្គលិក: កាក់ រតនា
 💠 តួនាទី: បុគ្គលិកផ្នែកព័ត៌មានវិទ្យា 
 🏠 សាខា: កំពង់ចាម
@@ -33,9 +46,9 @@ document.getElementById('date-time').innerHTML=dt;
 
 4.Support CAC
 
-5.រៀបចំMarketing materials
+5.រៀបចំ Marketing materials
 
-6.ដោះស្រាយបញ្ហាផ្នែកព័ត៌មានវិទ្យា
+6.ដោះស្រាយបញ្ហាព័ត៌មានវិទ្យា
 
 7.ប្រមូលទីតាំងដេប៉ូ និងកសិករ
 	</pre>
