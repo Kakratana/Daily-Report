@@ -10,8 +10,8 @@ if (navigator.share) {
 
 window.doSharing = (el) => {
   navigator.share({
-    title: el.parentNode.querySelector("h1").innerText,
+    //title: el.parentNode.querySelector("h1").innerText,
     text: el.parentNode.querySelector("p").innerText,
-    url: "https://codepen.io/chriscoyier/pen/KKzjQWO"
+    //url: "https://codepen.io/chriscoyier/pen/KKzjQWO"
   });
 };
